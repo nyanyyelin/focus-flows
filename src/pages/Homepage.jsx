@@ -1,7 +1,6 @@
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
-const Timer = () => {
+const Homepage = () => {
   const [input, setInput] = useState(0);
   const [minutesLeft, setMinutesLeft] = useState(0);
   const [secondsLeft, setSecondsLeft] = useState(0);
@@ -52,14 +51,14 @@ const Timer = () => {
 
   return (
     <div>
-      <h1>Timer</h1>
+      <h1>Homepage</h1>
       <form onSubmit={onSubmitStart}>
         <label className="px-3 py-1.5 text-base">Set Minutes</label>
         <input
           type="number"
           required
           onChange={(e) => setInput(e.target.value)}
-          className="rounded-md border-none border-gray-500 bg-gray-200 px-3 py-1.5 text-base"
+          className="rounded-md border-none border-gray-500 bg-gray-200 px-3 py-1.5 text-base text-black"
           value={input}
           min={0}
         />
@@ -67,7 +66,7 @@ const Timer = () => {
           {minutesLeft} : {secondsLeft}
         </h2>
       </form>
-      <div className="flex gap-3">
+      <div className="flex gap-3 text-black">
         <button
           className="rounded-md bg-red-300 px-1.5 py-1 text-base hover:bg-red-600"
           disabled={input === 0}
@@ -98,4 +97,4 @@ const Timer = () => {
   );
 };
 
-export default Timer;
+export default Homepage;

@@ -1,5 +1,11 @@
+import Timer from '../components/Timer';
+
 const Dashboard = () => {
-  return <div>dashboard</div>;
+  return (
+    <div>
+      <Timer />
+    </div>
+  );
 };
 
 export default Dashboard;

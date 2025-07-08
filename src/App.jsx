@@ -3,7 +3,7 @@ import {
   RouterProvider,
   Navigate,
 } from 'react-router-dom';
-import Timer from '../src/pages/Timer';
+import Homepage from './pages/Homepage';
 import Login from './pages/login';
 import Signup from './pages/Signup';
 import PageNotFound from './pages/PageNotFound';
@@ -16,11 +16,11 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Navigate to="/timer" replace />,
+        element: <Navigate to="/homepage" replace />,
       },
       {
-        path: '/timer',
-        element: <Timer />,
+        path: '/homepage',
+        element: <Homepage />,
       },
       {
         path: '/dashboard',
