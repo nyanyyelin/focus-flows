@@ -51,7 +51,6 @@ const Homepage = () => {
 
   return (
     <div>
-      <h1>Homepage</h1>
       <form onSubmit={onSubmitStart}>
         <label className="px-3 py-1.5 text-base">Set Minutes</label>
         <input
@@ -62,10 +61,12 @@ const Homepage = () => {
           value={input}
           min={0}
         />
+      </form>
+      <div>
         <h2 className="px-3 py-1.5 text-xl">
           {minutesLeft} : {secondsLeft}
         </h2>
-      </form>
+      </div>
       <div className="flex gap-3 text-black">
         <button
           className="rounded-md bg-red-300 px-1.5 py-1 text-base hover:bg-red-600"
