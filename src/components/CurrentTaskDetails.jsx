@@ -6,9 +6,10 @@ const CurrentTaskDetails = () => {
           Current Task : Coding
         </h1>
         <ul className="list-disc px-2 py-1">
-          <li>Status: Focus</li>
-          <li>Started At: 10:15 AM PST</li>
-          <li>Duration: 45 minutes </li>
+          <li className="mb-1">Session Type: Focus ( 1 of 4 ) </li>
+          <li className="mb-1">Started At: 07/29/2025 at 10:15 AM</li>
+          <li className="mb-1">Duration: 45 minutes </li>
+          <li className="mb-1">Due Date: 07/31/2025 at 11:59 PM</li>
         </ul>
       </div>
     </div>
