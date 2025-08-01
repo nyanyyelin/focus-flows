@@ -10,19 +10,19 @@ const Tasks = () => {
           <div></div>
           <div className="text-lg font-semibold">Task</div>
           <div className="text-lg font-semibold">
-            <button className="flex items-center gap-2 rounded-lg px-3 py-0.5 hover:bg-gray-800">
+            <button className="flex items-center gap-2 rounded-lg px-3 py-0.5 transition-all duration-300 hover:bg-gray-800">
               Status
               <RiExpandUpDownLine />
             </button>
           </div>
           <div className="text-lg font-semibold">
-            <button className="flex items-center gap-2 rounded-lg px-3 py-0.5 hover:bg-gray-800">
+            <button className="flex items-center gap-2 rounded-lg px-3 py-0.5 transition-all duration-300 hover:bg-gray-800">
               Priority
               <RiExpandUpDownLine />
             </button>
           </div>
           <div className="text-lg font-semibold">
-            <button className="flex items-center gap-2 rounded-lg px-3 py-0.5 hover:bg-gray-800">
+            <button className="flex items-center gap-2 rounded-lg px-3 py-0.5 transition-all duration-300 hover:bg-gray-800">
               Due Date
               <RiExpandUpDownLine />
             </button>

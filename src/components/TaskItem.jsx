@@ -4,7 +4,11 @@ const TaskItem = ({ task, status, priority, dueDate, dueTime }) => {
     <div
       className={`border-bordergray grid grid-cols-[5rem_20rem_10rem_10rem_15rem_8rem] items-center border-t py-2 text-base`}
     >
-      <input type="checkbox" className="h-4 w-5 justify-self-center" />
+      <input
+        type="checkbox"
+        className="h-4 w-5 justify-self-center rounded-lg"
+        checked={status === 'Completed'}
+      />
       <div className={`${status === 'Completed' ? 'line-through' : ''}`}>
         {task}
       </div>
