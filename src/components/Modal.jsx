@@ -5,15 +5,15 @@ const Modal = ({ open, onClose, children }) => {
     // backdrop
     <div
       onClick={onClose}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-white/20"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/85"
     >
       {/* Modal */}
       <div
         onClick={(e) => e.stopPropagation()}
-        className="bg-windowbg border-bordergray rounded-2xl border"
+        className="bg-windowbg border-bordergray relative h-[30rem] w-[30rem] rounded-2xl border pt-15"
       >
-        <button onClick={onClose}>
-          <RxCross2 className="text-2xl text-white" />
+        <button onClick={onClose} className="absolute top-2 right-2">
+          <RxCross2 className="text-2xl text-red-700" />
         </button>
         {children}
       </div>
