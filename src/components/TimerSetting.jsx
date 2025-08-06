@@ -1,4 +1,4 @@
-const TimeForm = ({ onSubmitStart, input, setInput }) => {
+const TimerSetting = ({ onSubmitStart, input, setInput }) => {
   return (
     <div className="flex flex-col items-center gap-y-7">
       <h1 className="text-center text-xl text-white">Timer Setting</h1>
@@ -56,4 +56,4 @@ const TimeForm = ({ onSubmitStart, input, setInput }) => {
   );
 };
 
-export default TimeForm;
+export default TimerSetting;

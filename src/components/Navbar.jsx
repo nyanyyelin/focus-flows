@@ -1,7 +1,7 @@
 import Modal from './Modal';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import TimeForm from './TimeForm';
+import TimeForm from './TimerSetting';
 import { createPortal } from 'react-dom';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

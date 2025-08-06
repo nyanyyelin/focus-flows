@@ -9,6 +9,17 @@ import Signup from './pages/Signup';
 import PageNotFound from './pages/PageNotFound';
 import AppLayout from './pages/AppLayout';
 import Dashboard from './pages/Dashboard';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+
+// Setting up react query
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 0, // time needed to update data in cache
+    },
+  },
+});
 const router = createBrowserRouter([
   {
     path: '/',
@@ -42,7 +53,12 @@ const router = createBrowserRouter([
   },
 ]);
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <ReactQueryDevtools initialIsOpen={false} />
+      <RouterProvider router={router} />;
+    </QueryClientProvider>
+  );
 };
 
 export default App;

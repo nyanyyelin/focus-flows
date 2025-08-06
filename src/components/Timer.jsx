@@ -18,7 +18,7 @@ const Timer = () => {
           </div>
         </div>
         <div className="m-8 px-3 py-4">
-          <h1 className="text-center text-8xl text-white">45 : 30</h1>
+          <h1 className="text-center text-8xl text-white">25 : 00</h1>
         </div>
         <div className="flex justify-center px-0">
           <TimerButton>Start</TimerButton>
